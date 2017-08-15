@@ -29,7 +29,7 @@ class App extends Component {
         <ul>
           {count > 0 &&
             games.map((game) => (
-              <li style={{listStyleType: 'none'}} key={game.id}>
+              <li className="game-card" style={{listStyleType: 'none'}} key={game.id}>
                 {game.name} {game.standard_start_time}
               </li>
           ))}
