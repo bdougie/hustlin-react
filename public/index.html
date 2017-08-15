@@ -2,8 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
     <meta name="theme-color" content="#000000">
+    <meta name="description" content="An application to know when transportation
+    will be affected by public sporting events">
+    <meta name="author" content="Brian Douglas">
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
@@ -19,13 +28,47 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Hustlin - the smart way to hustle</title>
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"></div>
+
+		<!-- Header -->
+			<header id="header">
+				<h1>Hustlin</h1>
+        <div id="root"></div>
+				<p>Sign up to be notified when the mobile app will become available.
+        Your email will not be sold or signed up for a subscription. Your email will
+        be added spreadsheet powered by <a
+          href="https://www.netlify.com">Netlify</a> and you will receive one
+        email notifiying how to download the app.</p>
+			</header>
+
+		<!-- Signup Form -->
+			<form id="signup-form" method="post" action="#">
+				<input type="email" name="email" id="email" placeholder="Email Address" />
+				<input type="submit" value="Sign Up" />
+			</form>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://twitter.com/bdougieYO" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.instagram.com/explore/tags/hustlinsf/?hl=en" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://github.com/bdougie/hustlin-react" class="icon fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Brian Douglas</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+    
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

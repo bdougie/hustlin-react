@@ -22,15 +22,14 @@ class App extends Component {
     const {games, message, count} = this.state;
 
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Huslin</h2>
+      <div>
+        <div>
           <p>{games ? message : "..."}</p>
         </div>
-        <ul className="App-intro">
+        <ul>
           {count > 0 &&
             games.map((game) => (
-              <li style={{listStyleType: 'none'}} key={game.id}>
+              <li className="game-card" style={{listStyleType: 'none'}} key={game.id}>
                 {game.name} {game.standard_start_time}
               </li>
           ))}
