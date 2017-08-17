@@ -3,8 +3,6 @@ Hustlin is a project I created to let me know when there is a home baseball game
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). The JSON API is powered a Lambda function that reads from a DynamoDB table. The code for that can be found at [bdougie/serverless-hustl](https://github.com/bdougie/serverless-hustl). Notifications are sent via [Postmark](https://postmarkapp.com/) every morning at 10am UTC. The code for that can be found at [bdougie/scheduled-hustlin-notifications](https://github.com/bdougie/scheduled-hustlin-notifications)
 
-NO
-
 ## Setup
 
 ```sh
